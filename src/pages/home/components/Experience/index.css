@@ -1,0 +1,21 @@
+
+.timeline-content {
+ 
+  background:  #F29E21;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  transition: 0.4s ease;  
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+
+

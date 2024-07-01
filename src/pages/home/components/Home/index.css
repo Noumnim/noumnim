@@ -1,0 +1,73 @@
+.hovered {
+    color: transparent;
+    -webkit-text-stroke: 0.1px #e99f4c;
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+  }
+  
+  .hovered::before {
+    content: attr(data-text);
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #e99f4c;
+    border-right: 4px solid #e99f4c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    transition: width 1s ease-in-out;
+  }
+  
+  .hovered:hover::before {
+    width: 100%;
+    filter: drop-shadow(5px 10px 18px #e99f4c);
+  }
+  
+
+  @media (max-width: 900px) {
+    .hovered {
+      font-size: 1.5rem; 
+    }
+    .hovered::before {
+      border-right: 2px solid #e99f4c; 
+      transition: width 0.5s ease-in-out;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .hovered {
+      font-size: 1.2rem; 
+    }
+    .hovered::before {
+      border-right: 1px solid #e99f4c;
+      transition: width 0.5s ease-in-out;
+    }
+  }
+
+  .resumebtn {
+    margin-top: 4rem;
+  }
+  .resumebtn .btn {
+    padding: 1rem;
+    border-radius: 0.5em;
+    transition: 0.3s;
+    color: #fff;
+    background: #e99f4c;
+    box-shadow: 0px 5px 10px #DB753B;
+    font-family: "Nunito", sans-serif;
+  }
+  .resumebtn .btn span {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    
+  }
+  .resumebtn .btn:hover {
+    background: #DB753B;
+  }
+  a{
+    text-decoration: none;
+  }
+  
